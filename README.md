@@ -1,1 +1,3 @@
-# togaf
+# TOGAF
+
+Projects representing TOGAF concepts.
