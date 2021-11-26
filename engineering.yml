@@ -1,0 +1,5 @@
+engineering-product:
+   name: TOGAF
+   path: togaf
+   modules:
+      - adm/engineering.yml

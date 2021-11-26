@@ -1,0 +1,7 @@
+engineering-product:
+  name: ADM
+  path: adm
+  issues:
+    fork-me-on-github:
+      name: Fork me on GitHub
+      description: Add to the generated site (page-template)
