@@ -1,0 +1,14 @@
+app-action:
+  icon: https://docs.nasdanika.org/images/nasdanika-logo.png
+  uri: nasdanika://actions/${model-name}
+  text: Nasdanika
+  location: https://www.nasdanika.org 
+  tooltip: Root action
+  children:
+    - app-action-reference: "../target/model-doc/actions/${model-name}.xml#/"
+  navigation:
+    - app-action:
+        text: Source
+        icon: fab fa-github
+        location: https://github.com/Nasdanika/togaf
+          

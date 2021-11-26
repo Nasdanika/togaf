@@ -5,3 +5,6 @@ engineering-product:
     fork-me-on-github:
       name: Fork me on GitHub
       description: Add to the generated site (page-template)
+    migrate-to-maven-plugin:
+      name: Migrate to Maven plug-in
+      description: Migrate generation from tests to Maven plug-in once available.
