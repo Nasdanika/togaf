@@ -105,7 +105,7 @@ public class TestTogafAdmGen extends TestBase {
 															
 					try {
 						// Marker 
-						String origin = "https://github.com/Nasdanika/togaf/blob/main/";
+						String origin = "https://github.com/Nasdanika/togaf/blob/main/adm/";
 						String baseDir = new File(".").getCanonicalFile().toURI().toString();
 						TreeIterator<EObject> cit = instance.eAllContents();
 						while (cit.hasNext()) {
@@ -115,7 +115,10 @@ public class TestTogafAdmGen extends TestBase {
 								String location = marker.getLocation();
 								if (location != null && location.startsWith(baseDir)) {
 									marker.setLocation(location.substring(baseDir.length()));
-									marker.setOrigin(origin + marker.getLocation());								
+									marker.setOrigin(origin + marker.getLocation());	
+									if (marker.getLine() > 0) {
+										marker.setOrigin(marker.getOrigin() + "#L" + marker.getLine());
+									}
 								}
 							}
 						}					

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<org.nasdanika.flow:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.nasdanika.flow="urn:org.nasdanika.flow" uri="nasdanika://togaf/adm" description="TOGAF ADM model." uuid="97a1e1ce-371e-4682-adca-ebd11b1c9922" name="TOGAF ADM">
+  <marker location="model/adm/adm.yml" line="1" column="1" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm/adm.yml#L1"/>
+  <modifiers>abstract</modifiers>
+</org.nasdanika.flow:Package>
