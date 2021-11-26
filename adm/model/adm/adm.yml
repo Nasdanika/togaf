@@ -1,6 +1,0 @@
-flow-package:
-  uri: nasdanika://togaf/adm
-  description: TOGAF ADM model.
-  name: TOGAF ADM
-  modifiers: abstract 
-            

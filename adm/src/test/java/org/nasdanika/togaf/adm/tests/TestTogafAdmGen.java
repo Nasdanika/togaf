@@ -85,7 +85,7 @@ public class TestTogafAdmGen extends TestBase {
 	 */
 	protected void generateInstanceModel(String name, ProgressMonitor progressMonitor) throws Exception {	
 		load(
-				"model/adm/" + name + ".yml", 
+				"model/" + name + ".yml", 
 				obj -> {
 					org.nasdanika.flow.Package pkg = (org.nasdanika.flow.Package) obj;
 					
@@ -284,13 +284,15 @@ public class TestTogafAdmGen extends TestBase {
 				
 		Resource containerResource = resourceSet.getResource(URI.createURI(name + ".xml").resolve(RESOURCE_MODELS_URI), true);
 	
-		BinaryEntityContainer container = new FileSystemContainer(new File("target/model-doc/site"));
+		File outputDir = new File("target/model-doc/site");		
+		BinaryEntityContainer container = new FileSystemContainer(outputDir);
 		for (EObject eObject : containerResource.getContents()) {
 			Diagnostician diagnostician = new Diagnostician();
 			org.eclipse.emf.common.util.Diagnostic diagnostic = diagnostician.validate(eObject);
 			assertThat(diagnostic.getSeverity()).isNotEqualTo(org.eclipse.emf.common.util.Diagnostic.ERROR);
 			generate(eObject, container, Context.EMPTY_CONTEXT, progressMonitor);
-		}		
+		}
+		copy(new File(outputDir, "adm"), new File("docs"), true, null);
 	}
 	
 	protected ResourceSet createResourceSet() {
@@ -312,18 +314,7 @@ public class TestTogafAdmGen extends TestBase {
 	
 	@Test
 	public void generate() throws Exception {
-//		delete(INSTANCE_MODELS_DIR);
-//		delete(ACTION_MODELS_DIR);
-//		delete(RESOURCE_MODELS_DIR);
-//		
-//		INSTANCE_MODELS_DIR.mkdirs();
-//		ACTION_MODELS_DIR.mkdirs();
-//		RESOURCE_MODELS_DIR.mkdirs();
-		
 		generateSite("adm");
-//		generateSite("aws");
-//		generateSite("java");
-//		generateSite("java-kubernetes");
 
 		long cacheMisses = FeatureCacheAdapter.getMisses();
 		long cacheCalls = FeatureCacheAdapter.getCalls();
