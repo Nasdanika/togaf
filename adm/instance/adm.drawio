@@ -1,0 +1,145 @@
+<mxfile compressed="false" host="Electron" modified="2021-11-27T00:53:33.832Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/15.8.4 Chrome/91.0.4472.164 Electron/13.6.2 Safari/537.36" version="15.8.4" etag="6ytu8pklcaAg22iUhXXA" type="device">
+  <diagram id="a167271e-7285-4426-ae47-fb1dc4512219" name="Page-1">
+    <mxGraphModel dx="2574" dy="1513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="Preliminary" link="elements/preliminary/index.html" id="f3ca9797_f3aa_4893_ae58_2f9c282b8434">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="290" y="30" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="D.&#xa;Technology Architecture" link="elements/technology-architecture/index.html" id="f5b2176a_52e7_4ce6_83b7_4867a62dafd4">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="440" y="520" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="C.&#xa;Information Systems Architectures" link="elements/information-systems-architectures/index.html" id="e8ef07c0_36bb_45c7_86f0_ce0d9f85038b">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="490" y="390" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="Requirements Management" link="elements/requirements-management/index.html" id="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;fontStyle=1" parent="1" vertex="1">
+            <mxGeometry x="290" y="390" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="B.&#xa;Business Architecture" link="elements/business-architecture/index.html" id="ef099052_19b1_407a_adf2_b9b402593709">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="430" y="250" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="A.&#xa;Architecture &#xa;Vision" link="elements/architecture-vision/index.html" id="dee55071_a4b8_406f_974f_725eb646e5eb">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="290" y="190" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="H. &#xa;Architecture &#xa;Change &#xa;Management" link="elements/architecture-change-management/index.html" id="931807de_f9a7_44cb_8a26_6247b699bb56">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="150" y="250" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="F.&#xa;Migration Planning" link="elements/migration-planning/index.html" id="d93fd993_05f7_4af7_b3ca_29f28c51d22e">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="150" y="530" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="G.&#xa;Implementation &#xa;Governance" link="elements/implementation-governance/index.html" id="ec7aea16_6fe6_49b4_983b_ac74d9c9ff47">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="90" y="390" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="E.&#xa;Opportunities&#xa;and&#xa;Solutions" link="elements/opportunities-and-solutions/index.html" id="c3c7e60a_b6d3_4234_bb97_2ea974ab737f">
+          <mxCell style="recursiveResize=0;fillColor=#fefece;shape=ellipse;whiteSpace=wrap;" parent="1" vertex="1">
+            <mxGeometry x="290" y="590" width="100" height="100" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="2">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="f3ca9797_f3aa_4893_ae58_2f9c282b8434" target="dee55071_a4b8_406f_974f_725eb646e5eb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="3">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="f5b2176a_52e7_4ce6_83b7_4867a62dafd4" target="c3c7e60a_b6d3_4234_bb97_2ea974ab737f" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="4">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="f5b2176a_52e7_4ce6_83b7_4867a62dafd4" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="5">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="e8ef07c0_36bb_45c7_86f0_ce0d9f85038b" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="6">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="e8ef07c0_36bb_45c7_86f0_ce0d9f85038b" target="f5b2176a_52e7_4ce6_83b7_4867a62dafd4" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="7">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="ef099052_19b1_407a_adf2_b9b402593709" target="e8ef07c0_36bb_45c7_86f0_ce0d9f85038b" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="8">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="ef099052_19b1_407a_adf2_b9b402593709" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="9">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="dee55071_a4b8_406f_974f_725eb646e5eb" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="10">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="dee55071_a4b8_406f_974f_725eb646e5eb" target="ef099052_19b1_407a_adf2_b9b402593709" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="11">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="931807de_f9a7_44cb_8a26_6247b699bb56" target="dee55071_a4b8_406f_974f_725eb646e5eb" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="12">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="931807de_f9a7_44cb_8a26_6247b699bb56" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="13">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="d93fd993_05f7_4af7_b3ca_29f28c51d22e" target="ec7aea16_6fe6_49b4_983b_ac74d9c9ff47" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="14">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;startArrow=classic;startFill=1;" parent="1" source="d93fd993_05f7_4af7_b3ca_29f28c51d22e" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="15">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="ec7aea16_6fe6_49b4_983b_ac74d9c9ff47" target="931807de_f9a7_44cb_8a26_6247b699bb56" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="16">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="ec7aea16_6fe6_49b4_983b_ac74d9c9ff47" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="17">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="c3c7e60a_b6d3_4234_bb97_2ea974ab737f" target="d93fd993_05f7_4af7_b3ca_29f28c51d22e" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject id="18">
+          <mxCell style="strokeColor=#000000;noEdgeStyle=1;" parent="1" source="c3c7e60a_b6d3_4234_bb97_2ea974ab737f" target="d79f65c7_4634_4d00_8c09_f3aa5e6b6c8d" edge="1">
+            <mxGeometry relative="1" as="geometry" />
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

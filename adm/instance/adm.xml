@@ -1,5 +1,156 @@
 <?xml version="1.0" encoding="ASCII"?>
-<org.nasdanika.flow:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:org.nasdanika.flow="urn:org.nasdanika.flow" uri="nasdanika://togaf/adm" description="TOGAF ADM model." uuid="97a1e1ce-371e-4682-adca-ebd11b1c9922" name="TOGAF ADM">
-  <marker location="model/adm/adm.yml" line="1" column="1" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm/adm.yml#L1"/>
+<org.nasdanika.flow:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.exec.content="urn:org.nasdanika.exec.content" xmlns:org.nasdanika.flow="urn:org.nasdanika.flow" uri="nasdanika://togaf/adm" uuid="92656d79-7157-4b8d-8fbb-efcba24ceda2" name="TOGAF ADM">
+  <marker location="model/adm.yml" line="1" column="1" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L1"/>
   <modifiers>abstract</modifiers>
+  <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="4a20057f-b6b0-4114-bbfb-5f88c8fbd9c7" style="true">
+    <marker location="model/adm.yml" line="4" column="5" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L4"/>
+    <source xsi:type="org.nasdanika.exec.content:Text" uuid="b7d2158b-5871-4005-b4e3-dbc00f4dd8f7" content="[TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html) [Architecture Development Method](https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html) model.">
+      <marker location="model/adm.yml" line="7" column="9" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L7"/>
+    </source>
+  </documentation>
+  <activities key="adm">
+    <value xsi:type="org.nasdanika.flow:Flow" uuid="b9ac5f2b-76dc-4e5e-949d-b370950b0361" name="ADM">
+      <marker location="model/adm.yml" line="12" column="7" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L12"/>
+      <representations key="main">
+        <value uuid="db3decc3-c69a-44fc-a497-da9334f592f5" type="drawio:adm.drawio">
+          <marker location="model/adm.yml" line="15" column="11" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L15"/>
+        </value>
+      </representations>
+      <elements key="business-architecture">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="4d422f9a-6a57-40ae-a11c-343c8a13dfd4" name="B. Business Architecture">
+          <marker location="model/adm.yml" line="33" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L33"/>
+          <outputs key="information-systems-architectures">
+            <value uuid="84549fe3-bee7-4304-9d4c-6ff31a14616e" targetKey="information-systems-architectures">
+              <marker location="model/adm.yml" line="36" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L36"/>
+            </value>
+          </outputs>
+          <outputs key="requirements-management">
+            <value uuid="3064ba0c-773d-4931-bd6d-3ef118ff0e4e" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="38" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L38"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="requirements-management">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="39e21f1f-b12f-40ae-a718-fd8eaef3ebe9" name="Requirements Management">
+          <marker location="model/adm.yml" line="89" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L89"/>
+        </value>
+      </elements>
+      <elements key="architecture-vision">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="4704519b-9bc7-43e2-86b0-3d61320fd908" name="A. Architecture Vision">
+          <marker location="model/adm.yml" line="25" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L25"/>
+          <outputs key="requirements-management">
+            <value uuid="6b3022e0-5158-4e73-a2e4-c8a1d790eaa7" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="30" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L30"/>
+            </value>
+          </outputs>
+          <outputs key="business-architecture">
+            <value uuid="58ad5b4f-8460-4e98-bbb4-0f977e35f1df" targetKey="business-architecture">
+              <marker location="model/adm.yml" line="28" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L28"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="technology-architecture">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="57b4b6ca-b667-4495-8958-0ad931c2638f" name="D. Technology Architecture">
+          <marker location="model/adm.yml" line="49" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L49"/>
+          <outputs key="requirements-management">
+            <value uuid="67e97d59-4749-453d-b82f-d0b3e5efa7c8" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="54" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L54"/>
+            </value>
+          </outputs>
+          <outputs key="opportunities-and-solutions">
+            <value uuid="3511b74e-8a7a-4eed-afa7-53a26f0091aa" targetKey="opportunities-and-solutions">
+              <marker location="model/adm.yml" line="52" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L52"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="information-systems-architectures">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="a36025e8-664f-49e2-a4d2-554c2e4cea6f" name="C. Information Systems Architectures">
+          <marker location="model/adm.yml" line="41" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L41"/>
+          <outputs key="requirements-management">
+            <value uuid="4a82345a-fdeb-4992-8af2-eff5b38b2a3d" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="46" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L46"/>
+            </value>
+          </outputs>
+          <outputs key="technology-architecture">
+            <value uuid="7562dd6d-9de4-4cb4-9700-d4d927b693b4" targetKey="technology-architecture">
+              <marker location="model/adm.yml" line="44" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L44"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="preliminary">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="4ad4c4c6-e383-46d1-bc7c-4677413e469d" name="Preliminary">
+          <marker location="model/adm.yml" line="19" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L19"/>
+          <outputs key="architecture-vision">
+            <value uuid="5f64f563-4ab9-40a4-bf26-256d23e61b2b" targetKey="architecture-vision">
+              <marker location="model/adm.yml" line="22" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L22"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="architecture-change-management">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="6580c0b2-e28e-4649-ad44-0620bd37dfb8" name="H. Architecture Change Management">
+          <marker location="model/adm.yml" line="81" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L81"/>
+          <outputs key="architecture-vision">
+            <value uuid="865c2510-a653-487d-a8b4-3a8e9e80db9f" targetKey="architecture-vision">
+              <marker location="model/adm.yml" line="84" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L84"/>
+            </value>
+          </outputs>
+          <outputs key="requirements-management">
+            <value uuid="1399b525-4768-44da-9aee-9e4761a3d906" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="86" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L86"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="opportunities-and-solutions">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="92d87bbf-8cdf-49f4-b2e8-db77f8041ac3" name="E. Opportunities and Solutions">
+          <marker location="model/adm.yml" line="57" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L57"/>
+          <outputs key="migration-planning">
+            <value uuid="edf99f9b-7446-4745-9ff3-668bcc06c40c" targetKey="migration-planning">
+              <marker location="model/adm.yml" line="60" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L60"/>
+            </value>
+          </outputs>
+          <outputs key="requirements-management">
+            <value uuid="eb897339-b421-4117-8ca6-39e9fa56195c" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="62" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L62"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="migration-planning">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="f718e73a-c57a-48cf-96fe-53d2ad1f2cb7" name="F. Migration Planning">
+          <marker location="model/adm.yml" line="65" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L65"/>
+          <outputs key="implementation-governance">
+            <value uuid="9181d624-b501-4d67-8700-73f05fa5e2af" targetKey="implementation-governance">
+              <marker location="model/adm.yml" line="68" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L68"/>
+            </value>
+          </outputs>
+          <outputs key="requirements-management">
+            <value uuid="b6cbd9ec-13c8-4f03-b843-9fbbd21e3d4f" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="70" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L70"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+      <elements key="implementation-governance">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="0572ef2e-f94c-444a-b89c-1605caa2007e" name="G. Implementation Governance">
+          <marker location="model/adm.yml" line="73" column="14" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L73"/>
+          <outputs key="requirements-management">
+            <value uuid="1d230aa8-b8b2-40c9-bf4a-5ccb9953fcc1" targetKey="requirements-management">
+              <marker location="model/adm.yml" line="78" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L78"/>
+            </value>
+          </outputs>
+          <outputs key="architecture-change-management">
+            <value uuid="9f236b13-3507-421f-9ecc-4ed52ca70a0f" targetKey="architecture-change-management">
+              <marker location="model/adm.yml" line="76" column="18" origin="https://github.com/Nasdanika/togaf/blob/main/adm/model/adm.yml#L76"/>
+            </value>
+          </outputs>
+        </value>
+      </elements>
+    </value>
+  </activities>
 </org.nasdanika.flow:Package>

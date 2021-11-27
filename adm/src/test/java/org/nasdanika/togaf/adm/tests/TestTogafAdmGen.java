@@ -284,7 +284,7 @@ public class TestTogafAdmGen extends TestBase {
 				
 		Resource containerResource = resourceSet.getResource(URI.createURI(name + ".xml").resolve(RESOURCE_MODELS_URI), true);
 	
-		File outputDir = new File("target/model-doc/site");		
+		File outputDir = new File("../docs");		
 		BinaryEntityContainer container = new FileSystemContainer(outputDir);
 		for (EObject eObject : containerResource.getContents()) {
 			Diagnostician diagnostician = new Diagnostician();
@@ -292,7 +292,7 @@ public class TestTogafAdmGen extends TestBase {
 			assertThat(diagnostic.getSeverity()).isNotEqualTo(org.eclipse.emf.common.util.Diagnostic.ERROR);
 			generate(eObject, container, Context.EMPTY_CONTEXT, progressMonitor);
 		}
-		copy(new File(outputDir, "adm"), new File("docs"), true, null);
+//		copy(new File(outputDir, "adm"), new File("../docs"), true, null);
 	}
 	
 	protected ResourceSet createResourceSet() {

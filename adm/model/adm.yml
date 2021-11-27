@@ -2,9 +2,9 @@ flow-package:
   uri: nasdanika://togaf/adm
   documentation:
     content-markdown:
-      styled: true
+      style: true
       source:
-        content-text: "TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html) [Architecture Development Method](https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html) model."
+        content-text: "[TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html) [Architecture Development Method](https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html) model."
   name: TOGAF ADM
   modifiers: abstract 
   activities:
@@ -16,68 +16,78 @@ flow-package:
             type: "drawio:adm.drawio"
         elements:
           preliminary:
-            name: Preliminary
-            relationships:
-              architecture-vision:
-                target: architecture-vision
+             flow-flow:
+               name: Preliminary
+               outputs:
+                 architecture-vision:
+                   target: architecture-vision
           architecture-vision:
-            name: A. Architecture Vision
-            relationships:
-              business-architecture:
-                target: business-architecture
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: A. Architecture Vision
+               outputs:
+                 business-architecture:
+                   target: business-architecture
+                 requirements-management:
+                   target: requirements-management
           business-architecture:
-            name: B. Business Architecture
-            relationships:
-              information-systems-architectures:
-                target: information-systems-architectures
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: B. Business Architecture
+               outputs:
+                 information-systems-architectures:
+                   target: information-systems-architectures
+                 requirements-management:
+                   target: requirements-management
           information-systems-architectures:
-            name: C. Information Systems Architectures
-            relationships:
-              technology-architecture:
-                target: technology-architecture
-              requirements-management:
-                target: requirements-management
-          technology-archtecture:
-            name: D. Technology Architecture
-            relationships:
-              opportunities-and-solutions:
-                target: opportunities-and-solutions
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: C. Information Systems Architectures
+               outputs:
+                 technology-architecture:
+                   target: technology-architecture
+                 requirements-management:
+                   target: requirements-management
+          technology-architecture:
+             flow-flow:
+               name: D. Technology Architecture
+               outputs:
+                 opportunities-and-solutions:
+                   target: opportunities-and-solutions
+                 requirements-management:
+                   target: requirements-management
           opportunities-and-solutions:
-            name: E. Opportunities and Solutions
-            relationships:
-              migration-planning:
-                target: migration-planning
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: E. Opportunities and Solutions
+               outputs:
+                 migration-planning:
+                   target: migration-planning
+                 requirements-management:
+                   target: requirements-management
           migration-planning:
-            name: F. Migration Planning
-            relationships:
-              implementation-governance:
-                target: implementation-governance
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: F. Migration Planning
+               outputs:
+                 implementation-governance:
+                   target: implementation-governance
+                 requirements-management:
+                   target: requirements-management
           implementation-governance:
-            name: G. Implementation Governance
-            relationships:
-              architecture-change-management:
-                target: architecture-change-management
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: G. Implementation Governance
+               outputs:
+                 architecture-change-management:
+                   target: architecture-change-management
+                 requirements-management:
+                   target: requirements-management
           architecture-change-management:
-            name: H. Architecture Change Management
-            relationships:
-              architecture-vision:
-                target: architecture-vision
-              requirements-management:
-                target: requirements-management
+             flow-flow:
+               name: H. Architecture Change Management
+               outputs:
+                 architecture-vision:
+                   target: architecture-vision
+                 requirements-management:
+                   target: requirements-management
           requirements-management:
-            name: Requirements Management
+             flow-flow:
+               name: Requirements Management
             
       
             
