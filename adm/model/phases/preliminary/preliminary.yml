@@ -1,0 +1,47 @@
+flow-flow:
+  name: Preliminary
+  documentation: 
+    content-markdown:
+      style: true
+      source:
+        content-resource: preliminary.md
+  input-artifacts:
+    - reference-materials/children/togaf-library      
+    - reference-materials/children/architecture-frameworks      
+    - non-architectural/children/drivers      
+    - non-architectural/children/business-frameworks
+    - non-architectural/children/governance-frameworks
+    - non-architectural/children/legal-frameworks
+    - non-architectural/children/architecture-governance-strategy
+    - non-architectural/children/architecture-capability
+    - non-architectural/children/partnership-and-contract-agreements
+    - architectural/children/org-model-for-enterprise-architecture
+    - architectural/children/architecture-framework                                        
+  output-artifacts:
+    - non-architectural/children/governance-frameworks/children/architecture
+    - architectural/children/request-for-architecture-work                                        
+  outputs:
+    architecture-vision:
+      target: architecture-vision
+  elements:
+    5.3.1:
+      flow-activity:
+        name: Scope the Enterprise Organizations Impacted
+    5.3.2:
+      flow-activity:
+        name: Confirm Governance and Support Frameworks
+    5.3.3:
+      flow-activity:
+        name: Define and Establish Enterprise Architecture Team and Organization
+    5.3.4:
+      flow-activity:
+        name: Identify and Establish Architecture Principles
+    5.3.5:
+      flow-activity:
+        name: Tailor the TOGAF Framework and, if any, Other Selected Architecture Framework(s)
+    5.3.6:
+      flow-activity:
+        name: Develop a Strategy and Implementation Plan for Tools and Techniques
+  resources:
+    - architecture-repository        
+        

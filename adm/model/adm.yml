@@ -15,12 +15,7 @@ flow-package:
           main:
             type: "drawio:adm.drawio"
         elements:
-          preliminary:
-             flow-flow:
-               name: Preliminary
-               outputs:
-                 architecture-vision:
-                   target: architecture-vision
+          preliminary: phases/preliminary/preliminary.yml
           architecture-vision:
              flow-flow:
                name: A. Architecture Vision
@@ -88,6 +83,132 @@ flow-package:
           requirements-management:
              flow-flow:
                name: Requirements Management
-            
-      
-            
+  artifacts:
+    reference-materials:
+      name: Reference Materials
+      description: Reference materials external to enterprise
+      children:
+        togaf-library:
+          name: TOGAF Library
+          documentation:
+            content-markdown:
+              source:
+                content-text: "[TOGAF Library](https://publications.opengroup.org/togaf-library)"
+        architecture-frameworks:
+          name: Architecture frameworks
+          documentation:
+            content-markdown:
+              source:
+                content-text: Other architecture frameworks.
+    non-architectural:
+      name: Non-Architectural
+      children:
+        drivers:
+          name: Drivers  
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  Board strategies and board business plans, business strategy, IT strategy, business principles, business goals, and business drivers.
+                  
+                  See [Business Principles, Business Goals and Business Drivers](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_09)
+        business-frameworks:
+          name: Business frameworks
+          documentation:
+            content-markdown:
+              source:
+                content-text: Major frameworks operating in the business; e.g., project/portfolio management.
+        governance-frameworks:
+          name: Governance frameworks
+          children:
+            architecture:
+              name: Architecture Governance Framework
+              documentation:
+                content-markdown:
+                  style: true
+                  source:
+                    content-text: "[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap44.html#tag_44_02)"
+        legal-frameworks:
+          name: Legal frameworks
+        architecture-governance-strategy:
+          name: Architecture Governance Strategy
+        architecture-capability:
+          name: Architecture capability
+        partnership-and-contract-agreements:
+          name: Partnership and contract agreements
+    architectural:
+      name: Architectural
+      children:
+        org-model-for-enterprise-architecture:
+          name: Organizational Model for Enterprise Architecture  
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  Includes:
+                  
+                  * Scope of organizations impacted
+                  * Maturity assessment, gaps, and resolution approach
+                  * Roles and responsibilities for architecture team(s)
+                  * Constraints on architecture work
+                  * Budget requirements
+                  * Governance and support strategy
+                  
+                  [Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_16)
+                  
+        architecture-framework:
+          name: Architecture framework
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  Includes: 
+                  
+                  * Architecture method
+                  * Architecture content
+                  * Configured and deployed tools
+                  * Architecture Principles
+                  * Architecture Repository
+                  
+        tailored-architecture-framework:
+          name: Tailored Architecture framework
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  Includes: 
+                  
+                  * Architecture method
+                  * Architecture content
+                  * Configured and deployed tools
+                  * Architecture Principles
+                  * Architecture Repository
+
+                  [Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_21)
+                  
+        architecture-principles:
+          name: Architecture Principles
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  [Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_04)
+                  
+        request-for-architecture-work:
+          name: Request for Architecture Work
+          documentation:
+            content-markdown:
+              source:
+                content-text: |+2
+                  [Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_17)
+                  
+  resources:
+    architecture-repository:
+      name: Architecture Repository
+      documentation:
+        content-markdown:
+          style: true
+          source:
+            content-text: |+2
+              [Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_05)
+                        
