@@ -2,9 +2,12 @@ engineering-product:
   name: ADM
   path: adm
   issues:
-    fork-me-on-github:
-      name: Fork me on GitHub
-      description: Add to the generated site (page-template)
+    engineering-link:
+      name: Engineering Link
+      description: Link to the NSD TOGAF Engineering product on the NSD site. On the eng. site mention that created with NSD Flow. In readme link to eng, generated doc, and flow. 
     migrate-to-maven-plugin:
       name: Migrate to Maven plug-in
       description: Migrate generation from tests to Maven plug-in once available.
+    deliverables-and-artifacts-folders:
+      name: Deliverables and Artifacts folders
+      description: Section 32 Deliverables under deliverables. Artifacts as it goes or look throug the TOC.
