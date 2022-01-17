@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStreamWriter;
-import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.util.ArrayList;
@@ -32,8 +31,11 @@ import org.nasdanika.common.Status;
 import org.nasdanika.common.Supplier;
 import org.nasdanika.common.SupplierFactory;
 import org.nasdanika.common.Util;
+import org.nasdanika.common.persistence.ObjectLoader;
 import org.nasdanika.common.resources.BinaryEntityContainer;
 import org.nasdanika.emf.EObjectAdaptable;
+import org.nasdanika.emf.persistence.EObjectLoader;
+import org.nasdanika.emf.persistence.GitMarkerFactory;
 import org.nasdanika.flow.util.FlowYamlLoadingExecutionParticipant;
 import org.nasdanika.html.model.app.gen.AppGenYamlLoadingExecutionParticipant;
 import org.yaml.snakeyaml.DumperOptions;
@@ -321,6 +323,15 @@ public class TestBase {
 			protected boolean isDiagnoseModel() {
 				return false;
 			}
+
+			@Override
+			protected ObjectLoader createLoader(ResourceSet resourceSet) {
+				ObjectLoader loader = super.createLoader(resourceSet);
+				if (loader instanceof EObjectLoader) {
+					((EObjectLoader) loader).setMarkerFactory(new GitMarkerFactory());
+				}
+				return loader;
+			}
 			
 		};
 		
@@ -344,6 +355,26 @@ public class TestBase {
 			throw e;
 		}
 		
+	}
+	
+	/**
+	 * Walks the directory passing files to the listener.
+	 * @param source
+	 * @param target
+	 * @param cleanTarget
+	 * @param cleanPredicate
+	 * @param listener
+	 * @throws IOException
+	 */
+	public static void walk(String path, BiConsumer<File,String> listener, File... files) throws IOException {
+		for (File file: files) {
+			String filePath = path == null ? file.getName() : path + "/" + file.getName();
+			if (file.isDirectory()) {
+				walk(filePath, listener, file.listFiles());
+			} else if (file.isFile() && listener != null) {
+				listener.accept(file, filePath);
+			}
+		}
 	}
 
 }

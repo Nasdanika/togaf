@@ -4,19 +4,21 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
-import org.eclipse.emf.common.util.TreeIterator;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EStructuralFeature;
@@ -56,9 +58,12 @@ import org.nasdanika.html.model.app.gen.Util;
 import org.nasdanika.html.model.app.util.ActionProvider;
 import org.nasdanika.html.model.bootstrap.BootstrapPackage;
 import org.nasdanika.html.model.html.HtmlPackage;
-import org.nasdanika.ncore.Marker;
 import org.nasdanika.ncore.NcorePackage;
 import org.nasdanika.ncore.util.NcoreResourceSet;
+
+import com.redfin.sitemapgenerator.ChangeFreq;
+import com.redfin.sitemapgenerator.WebSitemapGenerator;
+import com.redfin.sitemapgenerator.WebSitemapUrl;
 
 /**
  * Tests of agile flows.
@@ -103,26 +108,7 @@ public class TestTogafAdmGen extends TestBase {
 					}
 					assertThat(severity).isEqualTo(org.eclipse.emf.common.util.Diagnostic.OK);
 															
-					try {
-						// Marker 
-						String origin = "https://github.com/Nasdanika/togaf/blob/main/adm/";
-						String baseDir = new File(".").getCanonicalFile().toURI().toString();
-						TreeIterator<EObject> cit = instance.eAllContents();
-						while (cit.hasNext()) {
-							EObject next = cit.next();
-							if (next instanceof Marker) {
-								Marker marker = (Marker) next;
-								String location = marker.getLocation();
-								if (location != null && location.startsWith(baseDir)) {
-									marker.setLocation(location.substring(baseDir.length()));
-									marker.setOrigin(origin + marker.getLocation());	
-									if (marker.getLine() > 0) {
-										marker.setOrigin(marker.getOrigin() + "#L" + marker.getLine());
-									}
-								}
-							}
-						}					
-						
+					try {						
 						instanceModelResource.save(null);
 					} catch (IOException ioe) {
 						throw new NasdanikaException(ioe);
@@ -292,7 +278,27 @@ public class TestTogafAdmGen extends TestBase {
 			assertThat(diagnostic.getSeverity()).isNotEqualTo(org.eclipse.emf.common.util.Diagnostic.ERROR);
 			generate(eObject, container, Context.EMPTY_CONTEXT, progressMonitor);
 		}
-//		copy(new File(outputDir, "adm"), new File("../docs"), true, null);
+
+		// Site map
+		String domain = "https://docs.nasdanika.org/togaf";
+		WebSitemapGenerator wsg = new WebSitemapGenerator(domain, outputDir);
+		BiConsumer<File, String> listener = new BiConsumer<File, String>() {
+			
+			@Override
+			public void accept(File file, String path) {
+				if (path.endsWith(".html")) {
+					try {
+						WebSitemapUrl url = new WebSitemapUrl.Options(domain + "/" + path)
+							    .lastMod(new Date(file.lastModified())).changeFreq(ChangeFreq.WEEKLY).build();
+						wsg.addUrl(url); 
+					} catch (MalformedURLException e) {
+						throw new NasdanikaException(e);
+					}
+				}
+			}
+		};
+		walk(null, listener, outputDir.listFiles());
+		wsg.write();		
 	}
 	
 	protected ResourceSet createResourceSet() {
