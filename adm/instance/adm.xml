@@ -1,58 +1,80 @@
 <?xml version="1.0" encoding="ASCII"?>
-<org.nasdanika.flow:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.exec.content="urn:org.nasdanika.exec.content" xmlns:org.nasdanika.flow="urn:org.nasdanika.flow" xmlns:org.nasdanika.ncore="urn:org.nasdanika.ncore" uri="nasdanika://togaf/adm" uuid="d3a62aa4-d793-455f-aaf9-fb5284da5d99" name="TOGAF ADM">
-  <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="1" column="1" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+<org.nasdanika.flow:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:org.nasdanika.exec.content="urn:org.nasdanika.exec.content" xmlns:org.nasdanika.flow="urn:org.nasdanika.flow" xmlns:org.nasdanika.ncore="urn:org.nasdanika.ncore" uri="nasdanika://togaf/adm" uuid="e23c25ff-ae4f-4e08-9c97-28694361f4c2" name="TOGAF ADM">
+  <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="1" column="1" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
     <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+    <headRefs>refs/heads/main</headRefs>
+    <headRefs>refs/remotes/origin/main</headRefs>
   </marker>
   <modifiers>abstract</modifiers>
-  <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="a2771d02-1c48-4b7d-bcc3-0ee45035fdab" style="true">
-    <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="4" column="5" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+  <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="0e412f76-303f-40a0-937c-f75c35eb7f1e" style="true">
+    <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="4" column="5" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
       <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+      <headRefs>refs/heads/main</headRefs>
+      <headRefs>refs/remotes/origin/main</headRefs>
     </marker>
-    <source xsi:type="org.nasdanika.exec.content:Text" uuid="c6a0fbaa-fdb2-44c0-86ad-a1857ce98f71" content="[TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html) [Architecture Development Method](https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html) model.">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="7" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <source xsi:type="org.nasdanika.exec.content:Text" uuid="29ba6ab4-fe02-4ca5-94e6-54cff7ccbed9" content="[TOGAF 9.2](https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html) [Architecture Development Method](https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html) model.">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="7" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
     </source>
   </documentation>
   <resources key="architecture-repository">
-    <value uuid="45de6dd1-6801-4537-a8f5-9470d2424b6b" name="Architecture Repository">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="206" column="5" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <value uuid="e6a28c3f-753c-49bc-8d35-b0c47033be40" name="Architecture Repository">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="206" column="5" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
-      <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="696d2c0c-d2bc-4a8a-9be4-0fac5640edb5" style="true">
-        <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="209" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+      <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="af28c8ed-8deb-44ac-a578-b06b7b47d3c6" style="true">
+        <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="209" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
           <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+          <headRefs>refs/heads/main</headRefs>
+          <headRefs>refs/remotes/origin/main</headRefs>
         </marker>
-        <source xsi:type="org.nasdanika.exec.content:Text" uuid="626fe6e0-6e9c-412e-9737-8365a02ec94d" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_05)&#xA;          ">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="212" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <source xsi:type="org.nasdanika.exec.content:Text" uuid="41ad1e42-7aef-4e2e-b00e-f0b7fdae657e" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_05)&#xA;          ">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="212" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </source>
       </documentation>
     </value>
   </resources>
   <artifacts key="non-architectural">
-    <value uuid="f4bfd9ec-2d5e-49bc-9712-29cf74dd116d" name="Non-Architectural">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="103" column="5" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <value uuid="38212b94-37fb-48ba-bbce-8b764e703355" name="Non-Architectural">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="103" column="5" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
       <children key="governance-frameworks">
-        <value uuid="bc42f35d-e139-44e1-9c3c-34c7a452e758" name="Governance frameworks">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="121" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="5f582a0e-05ee-4beb-aa53-4131c010eebe" name="Governance frameworks">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="121" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <children key="architecture">
-            <value uuid="caf4a186-1800-42c8-a59c-68f25c9f8c74" name="Architecture Governance Framework">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="124" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="d1af6840-ea6a-47a3-b42d-0a4b4165d1e1" name="Architecture Governance Framework">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="124" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
-              <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="794b846d-917e-4935-bb75-c6334cbd6c0f" style="true">
-                <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="127" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+              <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="0a96e605-dc4b-474d-995e-b4b029ad7159" style="true">
+                <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="127" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                   <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                  <headRefs>refs/heads/main</headRefs>
+                  <headRefs>refs/remotes/origin/main</headRefs>
                 </marker>
-                <source xsi:type="org.nasdanika.exec.content:Text" uuid="f9ee1c92-ffde-431c-a1a2-b3e233fc87e4" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap44.html#tag_44_02)">
-                  <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="130" column="21" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+                <source xsi:type="org.nasdanika.exec.content:Text" uuid="cd8750e5-50a3-4d7c-bd5a-d05992d78ce0" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap44.html#tag_44_02)">
+                  <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="130" column="21" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                     <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                    <headRefs>refs/heads/main</headRefs>
+                    <headRefs>refs/remotes/origin/main</headRefs>
                   </marker>
                 </source>
               </documentation>
@@ -61,62 +83,82 @@
         </value>
       </children>
       <children key="architecture-capability">
-        <value uuid="1af7b056-4236-4ac3-b1c2-3c6e691458d7" name="Architecture capability">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="135" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="9c4ed26a-21d5-4e21-bb76-29a2e557b5ee" name="Architecture capability">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="135" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </children>
       <children key="business-frameworks">
-        <value uuid="e0f4c76d-9f3c-441e-91d3-c84bc71311b6" name="Business frameworks">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="115" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="eda79976-7b2b-4eb2-bae6-d7602722bf5a" name="Business frameworks">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="115" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="539f047c-6594-41e9-8f57-d6438905fa78">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="118" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="cdc36ea0-30d2-414b-8493-8771c4beab03">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="118" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="0c8f8094-911e-4ef4-b3cc-54651920dae4" content="Major frameworks operating in the business; e.g., project/portfolio management.">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="120" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="42d4adca-ac3b-4b06-bf70-d5260326bcc4" content="Major frameworks operating in the business; e.g., project/portfolio management.">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="120" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="architecture-governance-strategy">
-        <value uuid="3e325666-b3ed-4ceb-be30-b3018715b61e" name="Architecture Governance Strategy">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="133" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="ac3d07c5-9073-4c65-8ad6-5ffa0263f130" name="Architecture Governance Strategy">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="133" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </children>
       <children key="partnership-and-contract-agreements">
-        <value uuid="5bac521b-d40d-4e69-ae64-5cce3e81a308" name="Partnership and contract agreements">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="137" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="47e10371-fdc7-4229-a47f-4d0b477678ed" name="Partnership and contract agreements">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="137" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </children>
       <children key="legal-frameworks">
-        <value uuid="ac2ebf86-28c8-4203-9bd5-c7dfa468a2ad" name="Legal frameworks">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="131" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="19149a99-72de-4acc-b970-912d7fab28c9" name="Legal frameworks">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="131" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </children>
       <children key="drivers">
-        <value uuid="aa5ac395-663a-4b6b-abbb-a337288ee02c" name="Drivers">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="106" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="426899e0-7dcf-4fcd-b893-7228fc3f23f4" name="Drivers">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="106" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="15c486cc-7d15-453d-bb5f-cb96487883e0">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="109" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="15741ce4-2a77-44db-91b2-e78fc829687c">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="109" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="aacfe016-4b74-4322-b047-27a60c46320e" content="Board strategies and board business plans, business strategy, IT strategy, business principles, business goals, and business drivers.&#xA;&#xA;See [Business Principles, Business Goals and Business Drivers](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_09)&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="111" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="cb524400-0119-4594-9902-00a55de9f185" content="Board strategies and board business plans, business strategy, IT strategy, business principles, business goals, and business drivers.&#xA;&#xA;See [Business Principles, Business Goals and Business Drivers](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_09)&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="111" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
@@ -125,39 +167,53 @@
     </value>
   </artifacts>
   <artifacts key="reference-materials">
-    <value description="Reference materials external to enterprise" uuid="bb5f7dd7-a8dd-4683-a5f1-47d1cf82fff7" name="Reference Materials">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="87" column="5" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <value description="Reference materials external to enterprise" uuid="6135f1d8-42ec-4667-a8be-b6d3b5773cba" name="Reference Materials">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="87" column="5" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
       <children key="architecture-frameworks">
-        <value uuid="b568615e-e41e-409e-809a-026f78d1afef" name="Architecture frameworks">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="97" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="3aaa6439-be3d-456d-a2eb-f163fd78b5d3" name="Architecture frameworks">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="97" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="2dd92e73-967d-4530-8353-d447d49b09f1">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="100" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="28fcb03b-367a-4b95-8dae-ff8c0baa1d92">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="100" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="0eddf321-ae8b-4274-882b-2e9771b3a320" content="Other architecture frameworks.">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="102" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="a2342893-be19-43b3-9ac7-3040e678309d" content="Other architecture frameworks.">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="102" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="togaf-library">
-        <value uuid="79949710-3b87-4328-9310-6120285fb155" name="TOGAF Library">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="91" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="9522c223-0ef5-4d1e-a7f8-315e81ae8258" name="TOGAF Library">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="91" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="0f7c3c7d-edfc-4fb0-8d24-3d7c03827277">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="94" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="fd42a9d3-37a9-48f9-be0a-a1e2e6430bd4">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="94" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="78ab077b-2c47-4684-93d0-a3a4702b929e" content="[TOGAF Library](https://publications.opengroup.org/togaf-library)">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="96" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="e50bfde8-3cfc-47a5-92b3-5d41d616be67" content="[TOGAF Library](https://publications.opengroup.org/togaf-library)">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="96" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
@@ -166,90 +222,122 @@
     </value>
   </artifacts>
   <artifacts key="architectural">
-    <value uuid="ec012193-49f6-488a-9040-3f2e28536bce" name="Architectural">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="139" column="5" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <value uuid="7927c611-214c-4e34-81f6-52e38faa30d2" name="Architectural">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="139" column="5" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
       <children key="architecture-principles">
-        <value uuid="f626bfb6-1985-4861-bc86-50ccdf76fe7c" name="Architecture Principles">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="189" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="97b7bb9e-9ecf-4887-83ee-697f81dbe8cb" name="Architecture Principles">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="189" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="927463cd-df61-415a-85e8-8fe449235089">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="192" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="0b1404cc-c863-41c8-a9c4-a131bc5eecc6">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="192" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="f6e2c7ee-1cfb-433b-8b29-9998913033a7" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_04)&#xA;&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="194" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="a82710e6-8a3c-4ffa-9bdd-c708c5a6504c" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_04)&#xA;&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="194" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="tailored-architecture-framework">
-        <value uuid="2b61b7df-0506-4f74-a20e-6503f371283d" name="Tailored Architecture framework">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="173" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="e6e14f33-98a0-4ff1-9e80-c2f9fd6c8884" name="Tailored Architecture framework">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="173" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="4f1424c4-54c9-4950-88c3-7873c04e4675">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="176" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="b7d1e23f-8176-423c-bd61-8d372afa28e7">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="176" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="7174065a-deb0-4f69-b482-e0b511379562" content="Includes: &#xA;&#xA;* Architecture method&#xA;* Architecture content&#xA;* Configured and deployed tools&#xA;* Architecture Principles&#xA;* Architecture Repository&#xA;&#xA;[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_21)&#xA;&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="178" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="1048b093-ffaa-40fb-934e-512dda31bfd4" content="Includes: &#xA;&#xA;* Architecture method&#xA;* Architecture content&#xA;* Configured and deployed tools&#xA;* Architecture Principles&#xA;* Architecture Repository&#xA;&#xA;[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_21)&#xA;&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="178" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="request-for-architecture-work">
-        <value uuid="21b74a9b-63ec-409e-919e-faa71c56a781" name="Request for Architecture Work">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="197" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="bf576b94-6788-48e8-acf2-48536949be3e" name="Request for Architecture Work">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="197" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="55ee2fef-9230-489e-a272-6bb9a00a23e4">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="200" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="53c00ab7-7144-41e0-bf26-7d5ac8a5699b">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="200" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="8b4a5194-cc30-4004-a8aa-7ad5736c052d" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_17)&#xA;&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="202" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="05449c4e-9ab6-44fa-a519-1894390ba1e8" content="[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_17)&#xA;&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="202" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="org-model-for-enterprise-architecture">
-        <value uuid="06de1ca3-553a-45a8-9f07-d570aa6d6903" name="Organizational Model for Enterprise Architecture">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="142" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="bd0c77e0-b2b1-49ff-8897-b14e1810c3cd" name="Organizational Model for Enterprise Architecture">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="142" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="49c29f9f-cb6e-4fa2-82f5-3dcbce1a129f">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="145" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="a85e639c-7990-4b81-8bf2-0c90044c8a65">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="145" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="4ed392ff-38bb-4555-a9ca-c246624fce5e" content="Includes:&#xA;&#xA;* Scope of organizations impacted&#xA;* Maturity assessment, gaps, and resolution approach&#xA;* Roles and responsibilities for architecture team(s)&#xA;* Constraints on architecture work&#xA;* Budget requirements&#xA;* Governance and support strategy&#xA;&#xA;[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_16)&#xA;&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="147" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="fe7db07a-4c07-4526-bd10-a5d9f27234b7" content="Includes:&#xA;&#xA;* Scope of organizations impacted&#xA;* Maturity assessment, gaps, and resolution approach&#xA;* Roles and responsibilities for architecture team(s)&#xA;* Constraints on architecture work&#xA;* Budget requirements&#xA;* Governance and support strategy&#xA;&#xA;[Documentation](https://pubs.opengroup.org/architecture/togaf92-doc/arch/chap32.html#tag_32_02_16)&#xA;&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="147" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
         </value>
       </children>
       <children key="architecture-framework">
-        <value uuid="b94aa15b-cc73-4977-81b1-332444e52f22" name="Architecture framework">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="159" column="9" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="c6ea90be-4bbe-42c7-9bba-a9e7138c6890" name="Architecture framework">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="159" column="9" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="4202610c-5f26-4379-a3e1-ff1734c44122">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="162" column="13" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="8a8d7a7b-4a96-4d9e-aad7-7e486ff8a1ad">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="162" column="13" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Text" uuid="7faadc81-2aa3-49ee-a396-1b43daf0d751" content="Includes: &#xA;&#xA;* Architecture method&#xA;* Architecture content&#xA;* Configured and deployed tools&#xA;* Architecture Principles&#xA;* Architecture Repository&#xA;&#xA;">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="164" column="17" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Text" uuid="9ca11359-2ae7-4498-81ca-f5b2a582eb8e" content="Includes: &#xA;&#xA;* Architecture method&#xA;* Architecture content&#xA;* Configured and deployed tools&#xA;* Architecture Principles&#xA;* Architecture Repository&#xA;&#xA;">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="164" column="17" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
@@ -258,127 +346,165 @@
     </value>
   </artifacts>
   <activities key="adm">
-    <value xsi:type="org.nasdanika.flow:Flow" uuid="e5ae5c82-bf5c-4b6c-bd13-0a56dc93285e" name="ADM">
-      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="12" column="7" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+    <value xsi:type="org.nasdanika.flow:Flow" uuid="c7c35ad9-9622-4a4a-9e02-08a384902f21" name="ADM">
+      <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="12" column="7" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
         <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+        <headRefs>refs/heads/main</headRefs>
+        <headRefs>refs/remotes/origin/main</headRefs>
       </marker>
       <representations key="main">
-        <value uuid="eebdf0db-6449-45b5-a6cc-ef6551a772b6" type="drawio:adm.drawio">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="15" column="11" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value uuid="ea100f8d-b868-4631-b055-29a661720b29" type="drawio:adm.drawio">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="15" column="11" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </representations>
       <elements key="business-architecture">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="808a0bcd-62e1-4bd6-bc17-17c731d60ca7" name="B. Business Architecture">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="28" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="47cc30e6-813a-4c2b-b3e8-ee6b004e7178" name="B. Business Architecture">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="28" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="information-systems-architectures">
-            <value uuid="8b86c41b-cda4-4767-8c11-67c224230f8f" targetKey="information-systems-architectures">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="31" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="661b380f-ddad-459e-8261-bfcea8706ca9" targetKey="information-systems-architectures">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="31" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="requirements-management">
-            <value uuid="50f1578a-da46-4059-8bd2-5e9d3a10663d" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="33" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="614dc47d-6422-4157-89a0-90d697c98c62" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="33" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="requirements-management">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="d6bb77b7-f45b-4034-aaf5-22587fb736d5" name="Requirements Management">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="84" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="611c43a0-0ff0-4aa7-a713-305f06ef8e9b" name="Requirements Management">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="84" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
         </value>
       </elements>
       <elements key="architecture-vision">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="3cc5264a-bda6-4a0a-8fdc-fc2a7de74597" name="A. Architecture Vision">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="20" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="4371daae-953a-4ae4-ae0a-cc8683cd7dc4" name="A. Architecture Vision">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="20" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="requirements-management">
-            <value uuid="22d1be38-7512-4eb1-8ad1-895adab73a8f" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="25" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="aed11ad5-c204-4a05-9890-854609012f3a" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="25" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="business-architecture">
-            <value uuid="fe29af36-3a61-4094-a2da-eeca5f70001e" targetKey="business-architecture">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="23" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="ab7f5656-c387-4803-8151-4bf7da5a7f52" targetKey="business-architecture">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="23" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="technology-architecture">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="2ffafce5-caf3-46b1-869a-49b16b1e04c8" name="D. Technology Architecture">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="44" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="62c6cc92-35be-4f89-b186-b6443eb96442" name="D. Technology Architecture">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="44" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="requirements-management">
-            <value uuid="668a4231-6e37-401f-86cb-6a8759e03bfa" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="49" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="f1aa9a9f-9b88-405a-98e7-2241ce134a71" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="49" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="opportunities-and-solutions">
-            <value uuid="c520238a-5990-4fb5-be10-1ba215540fdc" targetKey="opportunities-and-solutions">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="47" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="6186b406-957b-4d76-974c-cc7d491eb4b9" targetKey="opportunities-and-solutions">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="47" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="information-systems-architectures">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="46c965d7-a48a-463e-a7e3-27668514249f" name="C. Information Systems Architectures">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="36" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="ddd744af-15ea-4e6c-8a0b-e98f8cd3a4a2" name="C. Information Systems Architectures">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="36" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="requirements-management">
-            <value uuid="40729b9a-b6da-4789-b640-3bc2bdf75860" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="41" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="d5ec7db7-ab56-453a-8e4c-db59e3df80d1" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="41" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="technology-architecture">
-            <value uuid="b766240a-2bdc-4d82-bc05-6be9293a84f5" targetKey="technology-architecture">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="39" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="c3918f2e-3944-4896-9c24-7512083c8e53" targetKey="technology-architecture">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="39" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="preliminary">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="a8fc4318-0d30-4e54-ba47-a4ece798c6d2" name="Preliminary">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="1" column="1" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="69ef6ae3-e996-4b6d-8d80-1ae4c277673e" name="Preliminary">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="1" column="1" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
-          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="d636c334-0ddd-400d-ac3e-4ba7ff214859" style="true">
-            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="4" column="5" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+          <documentation xsi:type="org.nasdanika.exec.content:Markdown" uuid="6dae8a73-e4cb-4c79-9b25-ff5b8558ae8c" style="true">
+            <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="4" column="5" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
               <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+              <headRefs>refs/heads/main</headRefs>
+              <headRefs>refs/remotes/origin/main</headRefs>
             </marker>
-            <source xsi:type="org.nasdanika.exec.content:Resource" uuid="363b6613-f0d3-47bc-b193-7c1a1c06397c" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.md">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="7" column="9" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <source xsi:type="org.nasdanika.exec.content:Resource" uuid="b2d24b07-b197-4234-bdb2-94b432f6d3a3" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.md">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="7" column="9" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </source>
           </documentation>
           <outputs key="architecture-vision">
-            <value uuid="c91242f9-3890-415c-81cb-a9cd07875c33" targetKey="architecture-vision">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="24" column="5" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="79328e12-242c-4e14-9ec5-3e583af1edfa" targetKey="architecture-vision">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="24" column="5" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
@@ -397,128 +523,164 @@
           <outputArtifactKeys>architectural/children/request-for-architecture-work</outputArtifactKeys>
           <resourceKeys>architecture-repository</resourceKeys>
           <elements key="5.3.2">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="4a267002-30fc-4ff8-a7e6-ff4547dd8ab5" name="Confirm Governance and Support Frameworks">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="31" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="f72d7551-a0ec-4cf8-bb16-9aac73f7d7fc" name="Confirm Governance and Support Frameworks">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="31" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
           <elements key="5.3.3">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="a34fc48b-5273-4d4d-9edd-ce2b504c00cc" name="Define and Establish Enterprise Architecture Team and Organization">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="34" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="cb833288-472f-4607-b05c-ad0e38b384eb" name="Define and Establish Enterprise Architecture Team and Organization">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="34" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
           <elements key="5.3.4">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="0aba1a84-a705-4e4a-bf44-976386cff87c" name="Identify and Establish Architecture Principles">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="37" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="4e095031-d420-4d42-80e1-0c007e0547b7" name="Identify and Establish Architecture Principles">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="37" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
           <elements key="5.3.5">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="0a8e52bc-fd2b-46fb-805b-4d35a8c98abd" name="Tailor the TOGAF Framework and, if any, Other Selected Architecture Framework(s)">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="40" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="26331cd8-539c-4a79-8306-7ff4808f26b2" name="Tailor the TOGAF Framework and, if any, Other Selected Architecture Framework(s)">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="40" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
           <elements key="5.3.6">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="203f583a-c6d0-42f4-b084-931483e7f563" name="Develop a Strategy and Implementation Plan for Tools and Techniques">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="43" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="1c5a5c12-aa5d-48a5-a2ed-0267ea49d955" name="Develop a Strategy and Implementation Plan for Tools and Techniques">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="43" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
           <elements key="5.3.1">
-            <value xsi:type="org.nasdanika.flow:Activity" uuid="b40ec1f8-3731-45c4-8064-ccbcdaed6a5c" name="Scope the Enterprise Organizations Impacted">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="28" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value xsi:type="org.nasdanika.flow:Activity" uuid="28ff551e-d9db-4545-8a56-42cca4ded6c5" name="Scope the Enterprise Organizations Impacted">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/phases/preliminary/preliminary.yml" line="28" column="7" path="adm/model/phases/preliminary/preliminary.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </elements>
         </value>
       </elements>
       <elements key="architecture-change-management">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="6be7d031-eadb-411a-83d2-ebe03ac14fda" name="H. Architecture Change Management">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="76" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="a0435ed1-5bf1-4211-9995-b1bef3821d0e" name="H. Architecture Change Management">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="76" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="architecture-vision">
-            <value uuid="ba266596-29d3-4505-9bb5-d558057b092b" targetKey="architecture-vision">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="79" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="c22b5b01-bdda-4ac8-b8a7-f591b612029e" targetKey="architecture-vision">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="79" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="requirements-management">
-            <value uuid="b299aa80-8730-4de9-97ba-b1faedfb4ced" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="81" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="3e9bfadf-a265-41b9-8c0b-6fb349188edc" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="81" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="opportunities-and-solutions">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="850d0b58-ea5e-42c7-bff2-7ee41cba8460" name="E. Opportunities and Solutions">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="52" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="e66f5925-e754-4c54-9658-afb15319273d" name="E. Opportunities and Solutions">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="52" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="migration-planning">
-            <value uuid="363d96b5-dafb-4a93-8f28-3709fb6db740" targetKey="migration-planning">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="55" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="f52b0faa-9326-4afa-b9b1-35a81761e096" targetKey="migration-planning">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="55" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="requirements-management">
-            <value uuid="2e6c92ed-7e44-4609-b134-55561cb7a9a8" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="57" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="2646a02c-9faa-4277-ab4e-ff7e23ed58c7" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="57" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="migration-planning">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="987158ee-5a5d-4d93-9ea1-a51b3275262a" name="F. Migration Planning">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="60" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="188b6762-e33c-431e-884a-08225701cab6" name="F. Migration Planning">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="60" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="implementation-governance">
-            <value uuid="4069163e-4a1d-4086-9758-1e9ef0a4f732" targetKey="implementation-governance">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="63" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="aaf5e4d8-c68e-4e39-b544-5405f3496162" targetKey="implementation-governance">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="63" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="requirements-management">
-            <value uuid="281cb915-f1c4-46c1-a461-482e092f5fa6" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="65" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="aba053ec-7832-4414-a3d3-9c62c7c36a54" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="65" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
         </value>
       </elements>
       <elements key="implementation-governance">
-        <value xsi:type="org.nasdanika.flow:Flow" uuid="dee83780-38a0-405f-b94c-bf599ef5aab5" name="G. Implementation Governance">
-          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="68" column="14" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+        <value xsi:type="org.nasdanika.flow:Flow" uuid="64de7bdc-5b7f-4c40-b577-61d33d5968bd" name="G. Implementation Governance">
+          <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="68" column="14" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
             <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+            <headRefs>refs/heads/main</headRefs>
+            <headRefs>refs/remotes/origin/main</headRefs>
           </marker>
           <outputs key="requirements-management">
-            <value uuid="334c7ee2-ef72-492a-9ac1-365d9c9e5524" targetKey="requirements-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="73" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="c7b6fef3-a0e9-488c-90b0-042ddaac6257" targetKey="requirements-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="73" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>
           <outputs key="architecture-change-management">
-            <value uuid="82ba22f1-0af8-4e37-b270-59b64b97939e" targetKey="architecture-change-management">
-              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="71" column="18" path="adm/model/adm.yml" branch="main" head="4e6acd9e0c8b0be44069bba7b4ea902ed6410c01">
+            <value uuid="cf717438-04ad-453c-bf89-be52df45eed9" targetKey="architecture-change-management">
+              <marker xsi:type="org.nasdanika.ncore:GitMarker" location="file:/C:/Users/Pavel/git/togaf/adm/model/adm.yml" line="71" column="18" path="adm/model/adm.yml" branch="main" head="b23da6aa2bb158e59013ed937cc6f73643805828">
                 <remotes key="origin" value="https://github.com/Nasdanika/togaf.git"/>
+                <headRefs>refs/heads/main</headRefs>
+                <headRefs>refs/remotes/origin/main</headRefs>
               </marker>
             </value>
           </outputs>

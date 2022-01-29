@@ -4,7 +4,7 @@
 	  <parent>
 	    <artifactId>parent</artifactId>
 	    <groupId>org.nasdanika.togaf</groupId>
-	    <version>9.2.2022-1-0</version>
+	    <version>9.2.2022-1-1</version>
 	    <relativePath>..</relativePath>
 	  </parent>
 	<artifactId>adm</artifactId>
@@ -17,7 +17,7 @@
 		<dependency>
 			<groupId>org.nasdanika.html</groupId>
 			<artifactId>flow</artifactId>
-			<version>2022.1.2</version>
+			<version>2022.1.4</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
