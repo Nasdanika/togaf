@@ -146,13 +146,6 @@ public class TestTogafAdmGen /* extends TestBase */ {
 				diagnostic.dump(System.err, 4, Status.FAIL, Status.ERROR);
 			}
 			assertThat(diagnostic.getStatus()).isEqualTo(Status.SUCCESS);
-			
-			if (diagnostic.getStatus() == Status.WARNING || diagnostic.getStatus() == Status.ERROR) {
-				System.err.println("***********************");
-				System.err.println("*      Diagnostic     *");
-				System.err.println("***********************");
-				diagnostic.dump(System.err, 4, Status.ERROR, Status.WARNING);
-			}
 		} catch (DiagnosticException e) {
 			System.err.println("******************************");
 			System.err.println("*      Diagnostic failed     *");
@@ -356,13 +349,13 @@ public class TestTogafAdmGen /* extends TestBase */ {
 			try {
 				ConsumerFactory<BinaryEntityContainer> consumerFactory = Objects.requireNonNull(EObjectAdaptable.adaptToConsumerFactory(eObject, BinaryEntityContainer.class), "Cannot adapt to ConsumerFactory");
 				Diagnostic callDiagnostic = org.nasdanika.common.Util.call(consumerFactory.create(Context.EMPTY_CONTEXT), container, progressMonitor);
-					if (callDiagnostic.getStatus() == Status.FAIL || callDiagnostic.getStatus() == Status.ERROR) {
-						System.err.println("***********************");
-						System.err.println("*      Diagnostic     *");
-						System.err.println("***********************");
-						callDiagnostic.dump(System.err, 4, Status.FAIL, Status.ERROR);
-					}
-					assertThat(callDiagnostic.getStatus()).isEqualTo(Status.SUCCESS);
+				if (callDiagnostic.getStatus() == Status.FAIL || callDiagnostic.getStatus() == Status.ERROR) {
+					System.err.println("***********************");
+					System.err.println("*      Diagnostic     *");
+					System.err.println("***********************");
+					callDiagnostic.dump(System.err, 4, Status.FAIL, Status.ERROR);
+				}
+				assertThat(callDiagnostic.getStatus()).isEqualTo(Status.SUCCESS);
 			} catch (DiagnosticException e) {
 				System.err.println("******************************");
 				System.err.println("*      Diagnostic failed     *");
