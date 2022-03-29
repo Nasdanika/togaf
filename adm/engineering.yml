@@ -11,3 +11,7 @@ engineering-product:
     deliverables-and-artifacts-folders:
       name: Deliverables and Artifacts folders
       description: Section 32 Deliverables under deliverables. Artifacts as it goes or look throug the TOC.
+    search:
+      name: Search
+      description: Add search. 
+      

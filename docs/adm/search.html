@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="EN">
   <head>
-    <title>TOGAF ADM</title>
+    <title>Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cerulean/bootstrap.min.css" id="nsd-bootstrap-theme-stylesheet"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -31,7 +31,7 @@
             <img src="https://docs.nasdanika.org/images/nasdanika-logo.png" class="nsd-app-label-icon"/>Nasdanika</a>
           <ul class="nav nsd-app-header-navs">
             <li class="nav-item">
-              <a href="search.html" class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
+              <a class="nav-link"><span class="fas fa-search nsd-app-label-icon"></span>Search</a>
             </li>
           </ul>
         </div>
@@ -39,10 +39,10 @@
       <div class="row">
         <div class="col nsd-app-navbar">
           <ul class="navbar navbar-light navbar-expand-lg">
-            <a class="navbar-brand">TOGAF ADM</a>
-            <button type="button" data-toggle="collapse" data-target="#nsd-1" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
+            <a href="index.html" class="navbar-brand">TOGAF ADM</a>
+            <button type="button" data-toggle="collapse" data-target="#nsd-155" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span>
             </button>
-            <div id="nsd-1" class="collapse navbar-collapse"></div>
+            <div id="nsd-155" class="collapse navbar-collapse"></div>
           </ul>
         </div>
       </div>
@@ -85,31 +85,182 @@ $('#005a51f800a7ce21177072a76aabcee971d1f93e1f29fe7f9fdbb1897d7b1ad2-navigation-
         </div>
         <div class="col nsd-app-content-panel">
           <div class="container-fluid">
+            <div class="row nsd-app-content-panel-title-and-items-row">
+              <div class="col-auto">
+                <H1><span class="nsd-app-content-panel-title"><span class="fas fa-search nsd-app-label-icon"></span>Search</span>
+                </H1>
+              </div>
+            </div>
             <div class="row nsd-app-content-panel-content-row">
               <div class="col">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="col">
-                      <table style="width:auto" class="table">
-                        <tr>
-                          <th><span>Origin</span>
-                          </th>
-                          <td>
-                            <a href="https://github.com/Nasdanika/togaf/blob/561389d76bd7df193df0d6c410118c2250b73dde/adm/model/adm.yml#L1" title="refs/heads/main, refs/remotes/origin/main"><span class="fab fa-github nsd-app-label-icon"></span>adm/model/adm.yml 1:1</a>
-                          </td>
-                        </tr>
-                        <tr>
-                          <th><span>Uri</span>
-                          </th>
-                          <td>nasdanika://togaf/adm <i class='far fa-copy' style='cursor:pointer' title='Copy URI to clipboard' onclick='navigator.clipboard.writeText("nasdanika://togaf/adm")'/></td>
-                        </tr>
-                        <tr>
-                          <th><span>Modifiers</span>
-                          </th>
-                          <td>abstract</td>
-                        </tr>
-                      </table><div class="markdown-body"><p><a href="https://pubs.opengroup.org/architecture/togaf92-doc/arch/index.html">TOGAF 9.2</a> <a href="https://pubs.opengroup.org/architecture/togaf92-doc/arch/toc-pt2.html">Architecture Development Method</a> model.</p>
-</div></div>
+                    <div class="col">		<script src="https://unpkg.com/lunr/lunr.js"></script>     
+		<script src="search-documents.js"></script>     
+     	<div id="search-app">
+			<b-form-group
+	          label="Filter"
+	          label-for="filter-input"
+	          label-cols-sm="3"
+	          label-align-sm="right"
+	          label-size="sm"
+	          class="mb-0"
+			  description="You can use wildcards, e.g. 'foo*' or 'f*o'; title or content fields, e.g. 'title:foo* bar'; boosts, e.g. 'foo^10 bar'; fuzzy matches, e.g. 'foo~1'; and term presence, e.g. '+foo bar -baz'"	          
+	        >
+	          <b-input-group size="sm">
+	            <b-form-input
+	              id="filter-input"
+	              v-model="filter"
+	              type="search"
+	              placeholder="Type to Search"
+	            ></b-form-input>
+	
+	            <b-input-group-append>
+	              <b-button :disabled="!filter" @click="filter = ''">Clear</b-button>
+	            </b-input-group-append>
+	          </b-input-group>
+	        </b-form-group>		
+	        <b-card 
+	        	v-for="searchResult in searchResults" 
+	        	:header-html="searchResult.title" 
+	        	:footer="searchResult.path"
+	        	class="my-1"
+	        	>
+	        	
+	        	<b-card-text><span v-html="searchResult.content"></span></b-card-text>
+	        
+	        </b-card>
+     	</div>
+     
+		<script>		      
+			new Vue({
+				  el: '#search-app',
+				  data: {
+			        	filter: null,
+				      searchIndex : lunr(function () {
+						  this.ref('url');
+						  this.field('title');
+						  this.field('content');
+						  this.metadataWhitelist = ['position'];
+	
+						  for (const key in searchDocuments) {
+							  let doc = searchDocuments[key];
+							this.add({
+								url: key,
+								title: doc.title,
+								path: doc.path,
+								content: doc.content
+							});  
+						  }
+						})
+				  },
+				  computed: {
+					searchResults: function() {
+						if (this.filter) {
+							let searchResult = this.searchIndex.search(this.filter);
+							return searchResult.map(function(e) {
+								let doc = searchDocuments[e.ref];
+								let titleMatches = [];
+								let contentMatches = [];
+								let matchMetaData = e.matchData.metadata;
+								for (const term in matchMetaData) {
+									if (matchMetaData[term]['title']) {
+										let positions = matchMetaData[term]['title'].position;
+										for (const match in positions) {
+											titleMatches.push(positions[match]);
+										}										
+									}
+									if (matchMetaData[term]['content']) {
+										let positions = matchMetaData[term]['content'].position;
+										for (const match in positions) {
+											contentMatches.push(positions[match]);
+										}										
+									}
+								}
+								
+								// Title highlighting
+								titleMatches.sort(function (a, b) { return a[0] - b[0] });
+								let titleElements = [];
+								let idx = 0;
+								for (const matchIdx in titleMatches) {
+									let match = titleMatches[matchIdx];
+									if (match[0] > idx) {
+										titleElements.push(doc.title.substring(idx, match[0]));
+									}
+									idx =  match[0] + match[1];
+									titleElements.push(`<span class='nsd-mark'>${doc.title.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.title.length - 1) {
+									titleElements.push(doc.title.substring(idx, doc.title.length));
+								}
+								
+								// Content ellipsing and highlighting
+								contentMatches.sort(function (a, b) { return a[0] - b[0] });
+								let contentElements = [];
+								let snippetLength = 10;
+								idx = 0;
+								for (const matchIdx in contentMatches) {
+									let match = contentMatches[matchIdx];
+									if (match[0] > idx) {
+										let words = doc.content.substring(idx, match[0]).split(' ');
+										let snippetedWords = [];
+										if (idx == 0) {
+											if (words.length <= snippetLength) {
+												snippetedWords = words;
+											} else {
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+										} else {
+											if (words.length <= snippetLength * 2) {
+												snippetedWords = words;
+											} else {
+												words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+												snippetedWords.push("&hellip;");
+												words.slice(words.length - snippetLength, words.length).forEach(e => snippetedWords.push(e));
+											}
+											
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+									idx =  match[0] + match[1];
+									contentElements.push(`<span class='nsd-mark'>${doc.content.substring(match[0], idx)}</span>`);
+								}
+								if (idx < doc.content.length - 1) {
+									let words = doc.content.substring(idx, doc.content.length).split(' ');
+									if (idx == 0) {
+										if (words.length < snippetLength * 2) {
+											contentElements.push(doc.content);
+										} else {
+											let snippetedWords = [];
+											words.slice(0, snippetLength * 2).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+											contentElements.push(snippetedWords.join(' '));
+										}
+									} else {
+										let snippetedWords = [];
+										if (words.length <= snippetLength) {
+											snippetedWords = words;
+										} else {
+											words.slice(0, snippetLength).forEach(e => snippetedWords.push(e));
+											snippetedWords.push("&hellip;");
+										}
+										contentElements.push(snippetedWords.join(' '));
+									}
+								}
+								return {
+									title: `<h5><a href="${e.ref}">${titleElements.join('')}</a></h5>`,
+									path: doc.path,
+									content: contentElements.join('')
+								};									
+							});
+						} 
+						return [];
+					}  
+				  }
+			});        	        	
+		</script>
+</div>
                   </div>
                 </div>
               </div>

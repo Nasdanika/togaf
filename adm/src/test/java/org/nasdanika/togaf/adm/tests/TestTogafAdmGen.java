@@ -1,8 +1,10 @@
 package org.nasdanika.togaf.adm.tests;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.fail;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
@@ -14,8 +16,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
+import java.util.function.Predicate;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -28,6 +32,8 @@ import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
 import org.eclipse.emf.ecore.util.Diagnostician;
 import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
+import org.json.JSONObject;
+import org.jsoup.nodes.Element;
 import org.junit.Test;
 import org.nasdanika.common.ConsumerFactory;
 import org.nasdanika.common.Context;
@@ -368,7 +374,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		// Site map
 		String domain = "https://docs.nasdanika.org/togaf";
 		WebSitemapGenerator wsg = new WebSitemapGenerator(domain, outputDir);
-		BiConsumer<File, String> listener = new BiConsumer<File, String>() {
+		BiConsumer<File, String> siteMapBuilder = new BiConsumer<File, String>() {
 			
 			@Override
 			public void accept(File file, String path) {
@@ -383,8 +389,46 @@ public class TestTogafAdmGen /* extends TestBase */ {
 				}
 			}
 		};
-		walk(null, listener, outputDir.listFiles());
-		wsg.write();		
+		
+		walk(null, siteMapBuilder, outputDir.listFiles());
+		wsg.write();
+		
+		// Search and inspection
+		AtomicInteger problems = new AtomicInteger();
+		JSONObject searchDocuments = new JSONObject();
+		File siteDir = new File(outputDir, name);
+		
+		BiConsumer<File, String> searchBuilder = new BiConsumer<File, String>() {
+			
+			@Override
+			public void accept(File file, String path) {
+				if (path.endsWith(".html") && !"search.html".equals(path)) {
+					try {	
+						Predicate<String> predicate = org.nasdanika.html.model.app.gen.Util.createRelativeLinkPredicate(file, siteDir);						
+						java.util.function.Consumer<? super Element> inspector = org.nasdanika.html.model.app.gen.Util.createInspector(predicate, error -> {
+							System.err.println("[" + path +"] " + error);
+							problems.incrementAndGet();
+						});
+						JSONObject searchDocument = org.nasdanika.html.model.app.gen.Util.createSearchDocument(path, file, inspector);
+						if (searchDocument != null) {
+							searchDocuments.put(path, searchDocument);
+						}
+					} catch (IOException e) {
+						throw new NasdanikaException(e);
+					}
+				}
+			}
+		};
+
+		walk(null, searchBuilder, siteDir.listFiles());
+		
+		try (FileWriter writer = new FileWriter(new File(siteDir, "search-documents.js"))) {
+			writer.write("var searchDocuments = " + searchDocuments);
+		}
+		
+		if (problems.get() > 0) {
+			fail("There are broken links: " + problems.get());
+		};		
 	}
 	
 	/**
