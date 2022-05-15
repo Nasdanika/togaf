@@ -63,6 +63,7 @@ import org.nasdanika.html.emf.EObjectActionResolver;
 import org.nasdanika.html.flow.FlowActionProviderAdapterFactory;
 import org.nasdanika.html.model.app.Action;
 import org.nasdanika.html.model.app.AppPackage;
+import org.nasdanika.html.model.app.Label;
 import org.nasdanika.html.model.app.gen.AppAdapterFactory;
 import org.nasdanika.html.model.app.gen.AppGenYamlLoadingExecutionParticipant;
 import org.nasdanika.html.model.app.gen.Util;
@@ -231,7 +232,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		EObject instance = instanceModelResource.getContents().get(0);
 		Action rootAction = EObjectAdaptable.adaptTo(instance, ActionProvider.class).execute(registry::put, progressMonitor);
 		Context uriResolverContext = Context.singleton(Context.BASE_URI_PROPERTY, URI.createURI("temp://" + UUID.randomUUID() + "/" + UUID.randomUUID() + "/"));
-		BiFunction<Action, URI, URI> uriResolver = org.nasdanika.html.model.app.gen.Util.uriResolver(rootAction, uriResolverContext);
+		BiFunction<Label, URI, URI> uriResolver = org.nasdanika.html.model.app.gen.Util.uriResolver(rootAction, uriResolverContext);
 		Adapter resolver = EcoreUtil.getExistingAdapter(rootAction, EObjectActionResolver.class);
 		if (resolver instanceof EObjectActionResolver) {														
 			org.nasdanika.html.emf.EObjectActionResolver.Context resolverContext = new org.nasdanika.html.emf.EObjectActionResolver.Context() {
@@ -390,7 +391,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 			}
 		};
 		
-		walk(null, siteMapBuilder, outputDir.listFiles());
+		org.nasdanika.common.Util.walk(null, siteMapBuilder, outputDir.listFiles());
 		wsg.write();
 		
 		// Search and inspection
@@ -420,7 +421,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 			}
 		};
 
-		walk(null, searchBuilder, siteDir.listFiles());
+		org.nasdanika.common.Util.walk(null, searchBuilder, siteDir.listFiles());
 		
 		try (FileWriter writer = new FileWriter(new File(siteDir, "search-documents.js"))) {
 			writer.write("var searchDocuments = " + searchDocuments);
@@ -429,26 +430,6 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		if (problems.get() > 0) {
 			fail("There are broken links: " + problems.get());
 		};		
-	}
-	
-	/**
-	 * Walks the directory passing files to the listener.
-	 * @param source
-	 * @param target
-	 * @param cleanTarget
-	 * @param cleanPredicate
-	 * @param listener
-	 * @throws IOException
-	 */
-	public static void walk(String path, BiConsumer<File,String> listener, File... files) throws IOException {
-		for (File file: files) {
-			String filePath = path == null ? file.getName() : path + "/" + file.getName();
-			if (file.isDirectory()) {
-				walk(filePath, listener, file.listFiles());
-			} else if (file.isFile() && listener != null) {
-				listener.accept(file, filePath);
-			}
-		}
 	}
 	
 	protected ResourceSet createResourceSet() {
