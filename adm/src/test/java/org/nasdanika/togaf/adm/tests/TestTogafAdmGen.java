@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -65,7 +64,7 @@ import org.nasdanika.html.model.app.Action;
 import org.nasdanika.html.model.app.AppPackage;
 import org.nasdanika.html.model.app.Label;
 import org.nasdanika.html.model.app.gen.AppAdapterFactory;
-import org.nasdanika.html.model.app.gen.AppGenYamlLoadingExecutionParticipant;
+import org.nasdanika.html.model.app.gen.AppGenYamlSupplier;
 import org.nasdanika.html.model.app.gen.Util;
 import org.nasdanika.html.model.app.util.ActionProvider;
 import org.nasdanika.html.model.bootstrap.BootstrapPackage;
@@ -232,7 +231,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		EObject instance = instanceModelResource.getContents().get(0);
 		Action rootAction = EObjectAdaptable.adaptTo(instance, ActionProvider.class).execute(registry::put, progressMonitor);
 		Context uriResolverContext = Context.singleton(Context.BASE_URI_PROPERTY, URI.createURI("temp://" + UUID.randomUUID() + "/" + UUID.randomUUID() + "/"));
-		BiFunction<Label, URI, URI> uriResolver = org.nasdanika.html.model.app.gen.Util.uriResolver(rootAction, uriResolverContext);
+		BiFunction<Label, URI, URI> uriResolver = org.nasdanika.html.model.app.util.Util.uriResolver(rootAction, uriResolverContext);
 		Adapter resolver = EcoreUtil.getExistingAdapter(rootAction, EObjectActionResolver.class);
 		if (resolver instanceof EObjectActionResolver) {														
 			org.nasdanika.html.emf.EObjectActionResolver.Context resolverContext = new org.nasdanika.html.emf.EObjectActionResolver.Context() {
@@ -263,27 +262,9 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		
 		URI resourceURI = URI.createFileURI(new File(resource).getAbsolutePath());
 
-		class ObjectSupplier extends AppGenYamlLoadingExecutionParticipant implements Supplier<EObject> {
-
-			public ObjectSupplier(Context context) {
-				super(context);
-			}
-
-			@Override
-			protected Collection<URI> getResources() {
-				return Collections.singleton(resourceURI);
-			}
-
-			@Override
-			public EObject execute(ProgressMonitor progressMonitor) throws Exception {				
-				return resourceSet.getResource(resourceURI, false).getContents().iterator().next();
-			}
-			
-		};
-		
 		// Diagnosing loaded resources. 
 		try {
-			return Objects.requireNonNull(org.nasdanika.common.Util.call(new ObjectSupplier(context), progressMonitor, diagnosticConsumer), "Loaded null from: " + resource);
+			return Objects.requireNonNull(org.nasdanika.common.Util.call(new AppGenYamlSupplier(resourceURI, context), progressMonitor, diagnosticConsumer), "Loaded null from: " + resource);
 		} catch (DiagnosticException e) {
 			System.err.println("******************************");
 			System.err.println("*      Diagnostic failed     *");
@@ -328,6 +309,8 @@ public class TestTogafAdmGen /* extends TestBase */ {
 				root, 
 				pageTemplate,
 				container,
+				null,
+				null,
 				Context.EMPTY_CONTEXT,
 				progressMonitor);
 		
@@ -410,7 +393,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 							System.err.println("[" + path +"] " + error);
 							problems.incrementAndGet();
 						});
-						JSONObject searchDocument = org.nasdanika.html.model.app.gen.Util.createSearchDocument(path, file, inspector);
+						JSONObject searchDocument = org.nasdanika.html.model.app.gen.Util.createSearchDocument(path, file, inspector, null);
 						if (searchDocument != null) {
 							searchDocuments.put(path, searchDocument);
 						}
