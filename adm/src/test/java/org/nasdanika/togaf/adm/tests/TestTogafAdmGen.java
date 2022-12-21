@@ -1,7 +1,7 @@
 package org.nasdanika.togaf.adm.tests;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.fail;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -33,7 +33,7 @@ import org.eclipse.emf.ecore.util.EcoreUtil;
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
 import org.json.JSONObject;
 import org.jsoup.nodes.Element;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.nasdanika.common.ConsumerFactory;
 import org.nasdanika.common.Context;
 import org.nasdanika.common.Diagnostic;
@@ -57,14 +57,14 @@ import org.nasdanika.exec.resources.ResourcesFactory;
 import org.nasdanika.exec.resources.ResourcesPackage;
 import org.nasdanika.flow.FlowPackage;
 import org.nasdanika.flow.Package;
-import org.nasdanika.flow.util.FlowYamlSupplier;
+import org.nasdanika.flow.util.FlowObjectLoaderSupplier;
 import org.nasdanika.html.emf.EObjectActionResolver;
 import org.nasdanika.html.flow.FlowActionProviderAdapterFactory;
 import org.nasdanika.html.model.app.Action;
 import org.nasdanika.html.model.app.AppPackage;
 import org.nasdanika.html.model.app.Label;
 import org.nasdanika.html.model.app.gen.AppAdapterFactory;
-import org.nasdanika.html.model.app.gen.AppGenYamlSupplier;
+import org.nasdanika.html.model.app.gen.AppGenObjectLoaderSupplier;
 import org.nasdanika.html.model.app.gen.Util;
 import org.nasdanika.html.model.app.util.ActionProvider;
 import org.nasdanika.html.model.bootstrap.BootstrapPackage;
@@ -103,7 +103,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 		URI resourceURI = URI.createFileURI(new File("model/" + name + ".yml").getCanonicalPath()); 
 		
 		@SuppressWarnings("resource")
-		Supplier<EObject> flowSupplier = new FlowYamlSupplier(resourceURI, context);
+		Supplier<EObject> flowSupplier = new FlowObjectLoaderSupplier(resourceURI, context);
 		
 		org.nasdanika.common.Consumer<EObject> flowConsumer = new org.nasdanika.common.Consumer<EObject>() {
 
@@ -264,7 +264,7 @@ public class TestTogafAdmGen /* extends TestBase */ {
 
 		// Diagnosing loaded resources. 
 		try {
-			return Objects.requireNonNull(org.nasdanika.common.Util.call(new AppGenYamlSupplier(resourceURI, context), progressMonitor, diagnosticConsumer), "Loaded null from: " + resource);
+			return Objects.requireNonNull(org.nasdanika.common.Util.call(new AppGenObjectLoaderSupplier(resourceURI, context), progressMonitor, diagnosticConsumer), "Loaded null from: " + resource);
 		} catch (DiagnosticException e) {
 			System.err.println("******************************");
 			System.err.println("*      Diagnostic failed     *");
